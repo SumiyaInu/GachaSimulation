@@ -24,7 +24,7 @@ Provides four base gacha modes used by the other two files:
 - Until first UR (no pity)
 - Until first UR (with pity)
 
-### 2. `Gacha_Simulation_02.py`
+### 2. `Gacha_Simulation_v201.py`
 Simulates 1000 players drawing N times.
 - Calculates: expected URs, mean, max, min, standard deviation, standard error, mode, 95% confidence interval
 - Classifies players as "lucky" or "unlucky" using ±2σ bounds
@@ -33,7 +33,7 @@ Simulates 1000 players drawing N times.
 - Includes formula: S√V = S√(p(1-p)/n) < εp (used to determine n ≥ 14,976 under 95% CI, 10% error)
 - Exports full draw results per player (`N`, `R`, `SR`, `UR`) to CSV
 
-### 3. `Gacha_Simulation_02_UntilGet.py`
+### 3. `Gacha_Simulation_UntilGet_v201.py`
 Simulates 1000 players drawing until their first UR and records how many draws it took.
 - Calculates: mean, max, min, standard deviation, standard error, mode, 95% confidence interval
 - Classifies lucky/unlucky players by ±2σ
